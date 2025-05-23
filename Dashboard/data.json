@@ -1,0 +1,71 @@
+{
+    "tagged_individuals": [
+        {
+            "name": "Elliot Graves",
+            "threat_level": "red",
+            "notes": "Recent unexplained financial transactions flagged for investigation.",
+            "social": "@elliot_invests",
+            "message": "High-risk activity detected."
+        },
+        {
+            "name": "Daryl Finch",
+            "threat_level": "red",
+            "notes": "Linked to multiple flagged financial transactions.",
+            "social": "@finch_network",
+            "message": "Urgent review needed."
+        },
+        {
+            "name": "Samantha Ridge",
+            "threat_level": "orange",
+            "notes": "Frequent travels to restricted zones. Monitoring advised.",
+            "social": "@ridge_explorer",
+            "message": "Potential security concerns based on travel pattern."
+        },
+        {
+            "name": "Veronica Chase",
+            "threat_level": "orange",
+            "notes": "Suspected in communication with flagged entities.",
+            "social": "@chase_connect",
+            "message": "Further analysis required."
+        },
+        {
+            "name": "Nathan Cross",
+            "threat_level": "green",
+            "notes": "No notable risks observed. Regular activity detected.",
+            "social": "@nathan_life",
+            "message": "Standard monitoring in place."
+        }
+    ],
+    "media_posts": [
+        {
+            "username": "@elliot_invests",
+            "message": "Big moves happening soon. Stay tuned!",
+            "tagged_individual": "Elliot Graves",
+            "posted": "12 minutes ago"
+        },
+        {
+            "username": "@finch_network",
+            "message": "Meeting some important people tonight.",
+            "tagged_individual": "Daryl Finch",
+            "posted": "2 hours ago"
+        },
+        {
+            "username": "@ridge_explorer",
+            "message": "Off-grid for a bit. Check back later!",
+            "tagged_individual": "Samantha Ridge",
+            "posted": "1 hour ago"
+        },
+        {
+            "username": "@chase_connect",
+            "message": "Anyone else notice weird patterns lately?",
+            "tagged_individual": "Veronica Chase",
+            "posted": "5 minutes ago"
+        },
+        {
+            "username": "@nathan_life",
+            "message": "Morning coffee and chill vibes.",
+            "tagged_individual": "Nathan Cross",
+            "posted": "30 minutes ago"
+        }
+    ]
+}
