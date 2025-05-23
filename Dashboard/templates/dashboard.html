@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <title>Fusion Center Dashboard</title>
+    <meta http-equiv="refresh" content="10">  <!-- Auto-refresh every 10 sec -->
+</head>
+<body>
+    <div class="container">
+        <div class="Profiles">
+            <div style="margin: auto;margin-right: auto; padding: 10px; display: block; width: 50%;">
+        <h2>Tagged Individuals: </h2>
+        {% for person in individuals %}
+            <div class="alert" onclick="document.location.href='profile?name={{ person.name }}'" style="background: {{ person.threat_level }}; cursor: pointer; color: white;">{{ person.name }}</div>
+        {% endfor %}
+    <button class="alert" style="font-size: 20px; border-style: none; width:50%; cursor: pointer; background: #007bff; color: white;" type="button" onclick="document.location.href='/upload'">Upload Data</button>
+        
+    </div>
+    <iframe src="/profile?name={{random_profile.name}}"></iframe>
+    <div style="width: 100%; margin: auto" class="social-media-feed">
+        <h2 style="background: none; padding: 15px;">Most Recent Posts</h2>
+        <div class="post">
+            <h3 class="username">{{socials[rand_index].username}}</h3>
+            <p class="content">{{socials[rand_index].message}}</p>
+            <span class="timestamp">{{socials[rand_index].posted}}</span>
+    </div>    
+</div>
+    </div>
+    </div>
+</body>
+</html>
