@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for
 import json
 import os
 import random
@@ -35,12 +35,9 @@ def update_data(new_entry):
             "tagged_individual": new_entry['tagged_individual'],
             "posted": ""
     })
-    #data["news_alerts"].push({})
 
     with open(DATA_FILE, "w") as file:
         json.dump(data, file, indent=4)
-    
-    print("✅ Data successfully added to JSON:", data)
 
 
 @app.route('/', methods=["GET", "POST"])
