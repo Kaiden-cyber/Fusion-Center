@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile.name }}'s Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Overview</h1>
+        <div class="profile">
+            <label for="individual">Tagged Individual:</label>
+            <h2>{{profile.name}}</h2>
+
+            <label for="threat-level">Threat Level:</label>
+            <div class="risk-selector">
+                <input type="radio" id="low" name="threat_level" value="low" disabled>
+                <label for="low" class="low-risk">Low Risk</label>
+
+                <input type="radio" id="medium" name="threat_level" value="medium" disabled>
+                <label for="medium" class="medium-risk">Medium Risk</label>
+
+                <input type="radio" id="high" name="threat_level" value="high" disabled>
+                <label for="high" class="high-risk">High Risk</label>
+            </div>
+
+            <label for="alert-message">Social Media Account:</label>
+            <textarea id="alert-message" name="alert_message" style="resize: none; border: none; font-size: 20px; text-align: center; width: 100%; color: black;" disabled>{{username.username}}</textarea>
+            <label for="additional-info">Notes:</label>
+            <textarea id="additional-info" name="additional_info" style="resize: none; border: none; font-size: 20px; text-align: center; width: 100%; color: black;" disabled>{{profile.notes}}</textarea>
+        </div>
+        <button type="button" style="border-style: none;" onclick="window.top.location.href='/'">Return To Dashboard</button>
+    </div>
+    <script>
+        let threatLevel = "{{ profile.threat_level }}";
+        let threat_dict = {"red":document.getElementById("high"), "orange":document.getElementById("medium"), "green":document.getElementById("low")}
+        threat_dict[threatLevel].checked = true;
+    </script>
+    
+</body>
+</html>

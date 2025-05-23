@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Threat Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Threat Data</h1>
+        <form method="POST" id="uploadForm">
+            <label for="individual">Tagged Individual:</label>
+            <input type="text" id="individual" name="tagged_individual" required>
+
+            <label for="threat-level">Threat Level:</label>
+            <div class="risk-selector">
+                <input type="radio" id="low" name="threat_level" value="low" checked>
+                <label for="low" class="low-risk">Low Risk</label>
+
+                <input type="radio" id="medium" name="threat_level" value="medium">
+                <label for="medium" class="medium-risk">Medium Risk</label>
+
+                <input type="radio" id="high" name="threat_level" value="high">
+                <label for="high" class="high-risk">High Risk</label>
+            </div>
+
+            <label for="alert-message">Social Media Account:</label>
+            <textarea id="alert-message" name="alert_message"></textarea>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional_info"></textarea>
+
+            <button type="submit">Submit Data</button>
+        </form>
+        <button type="button" style="border-style: none;" onclick="document.location.href='/'"><- Back To Dashboard</button>
+    </div>
+    
+</body>
+</html>
