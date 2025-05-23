@@ -28,7 +28,7 @@
   <li>download the Dashboard folder</li>
   <li>Navigate to the directory in your terminal</li>
   <li>Run: <i>pip install -r requirements.txt</i> to install the libraries that this project uses</li>
-  <li>Run python fusion_center.py</li>
+  <li>Run <i>python fusion_center.py</i></li>
   <li>Navigate to 127.0.0.1:5000 to see the program</li>
 </ol>
 <h2>When You Run the Program it Should Look Like This:</h2>
