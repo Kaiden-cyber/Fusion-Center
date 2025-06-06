@@ -52,3 +52,9 @@ For the Fusion Center to function optimally, it needs strong governance and stan
 
 # The Demo
 I have created a demo program that is meant to be an outline of the features and daily operations of the cyber fusion center, information about personnel and reports can be found in the Shifts, Personnel, and Reports folder. The demo itself can be found in the Dashboard folder.
+
+## Demo Images
+![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Demo.png)
+![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Workflows.png)
+![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Shifts.png)
+![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Reports.png)
