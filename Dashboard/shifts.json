@@ -1,0 +1,124 @@
+{
+    "employees": [
+        {
+            "name": "Sofia Moreno",
+            "role": "Intelligence Analyst",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Carlos Ramirez",
+            "role": "Cybersecurity Specialist",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Maria Gonzalez",
+            "role": "Data Scientist",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Juan Perez",
+            "role": "Operations Coordinator",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Ana Martinez",
+            "role": "Threat Analyst",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
+        },
+        {
+            "name": "Luis Hernandez",
+            "role": "Database Administrator",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
+        },
+        {
+            "name": "Isabel Lopez",
+            "role": "Communications Officer",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Miguel Torres",
+            "role": "Field Liaison",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Laura Diaz",
+            "role": "Policy Advisor",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Victor Cruz",
+            "role": "Technical Support",
+            "shift_time_range": "06:00 - 14:00",
+            "workdays": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
+        },
+        {
+            "name": "Emily Carter",
+            "role": "Network Engineer",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "James Brown",
+            "role": "System Administrator",
+            "shift_time_range": "22:00 - 06:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Sarah Johnson",
+            "role": "Incident Response Specialist",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
+        },
+        {
+            "name": "Robert Wilson",
+            "role": "Forensic Analyst",
+            "shift_time_range": "22:00 - 06:00",
+            "workdays": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
+        },
+        {
+            "name": "Olivia Martinez",
+            "role": "Security Operations Specialist",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        },
+        {
+            "name": "Daniel Garcia",
+            "role": "Threat Intelligence Officer",
+            "shift_time_range": "22:00 - 06:00",
+            "workdays": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        },
+        {
+            "name": "Nathan Scott",
+            "role": "Software Engineer",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+            "name": "Jessica Taylor",
+            "role": "Cyber Risk Analyst",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
+        },
+        {
+            "name": "Ethan White",
+            "role": "Digital Forensics Specialist",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Thursday", "Friday", "Saturday", "Sunday", "Monday"]
+        },
+        {
+            "name": "Sophia Green",
+            "role": "Operations Supervisor",
+            "shift_time_range": "14:00 - 22:00",
+            "workdays": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        }
+    ]
+}
