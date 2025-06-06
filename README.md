@@ -50,5 +50,5 @@ For the FUsion Center to function optimally, it needs strong governance and stan
 
 ---
 
-# The Dashboard
-I have programmed a demo of a dashboard that would process all of this informaiton, and you can look at the description and the code in the Dashboard folder.
+# The Demo
+I have created a demo program that is meant to be an outline of the features and daily operations of the cyber fusion center, information about personnel and reports can be found in the Shifts, Personnel, and Reports folder. The demo itself can be found in the Dashboard folder.
