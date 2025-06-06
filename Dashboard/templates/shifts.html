@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <title>Fusion Center Dashboard</title>
+</head>
+<body>
+    <!--Start Navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Fusion Center Shifts</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/workflows">Workflows</a></li>
+            <li><a href="/shifts">Today's Shifts</a></li>
+            <li><a href="/reports">Daily Reports</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="margin-bottom:5px;">Shifts For {{daylist[3]}} {{datelist[3]}}</h1>
+    <caption>Today's Date: {{curr_date}}</caption>
+
+    <div style="padding: 5%; padding-top: 0%; padding-bottom: 0%;">
+    <div style="display:flex; justify-content: space-between; width: 100%;">
+        <div style="font-size: 32px; cursor: pointer; display: flex; align-items: center;" onclick="window.location='/shifts?date={{datelist[2]}}'">&#9664;</div>
+        
+        <div class="circle-div" style="border: 5px solid #808080;" onclick="window.location='/shifts?date={{datelist[0]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[0]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[0]}}</h4>
+        </div>
+        
+        <div class="circle-div" style="border: 5px solid #808080;" onclick="window.location='/shifts?date={{datelist[1]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[1]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[1]}}</h4>
+        </div>
+        <div class="circle-div" style="border: 5px solid #663399;" onclick="window.location='/shifts?date={{datelist[2]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[2]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[2]}}</h4>
+        </div>
+        <div class="circle-div" style="border: 5px solid #008000; background: #008000; color: white" onclick="window.location='/shifts?date={{datelist[3]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[3]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[3]}}</h4>
+        </div>
+        <div class="circle-div" style="border: 5px solid #FFAA00;" onclick="window.location='/shifts?date={{datelist[4]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[4]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[4]}}</h4>
+        </div>
+        <div class="circle-div" style="border: 5px solid #FF4500;" onclick="window.location='/shifts?date={{datelist[5]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[5]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[5]}}</h4>
+        </div>
+        <div class="circle-div" style="border: 5px solid #B22222;" onclick="window.location='/shifts?date={{datelist[6]}}'">
+            <h3 style="margin: 0; padding: 0;">{{daylist[6]}}</h3>
+            <h4 style="margin: 0; padding: 0;">{{datelist[6]}}</h4>
+        </div>
+        <div style="font-size: 32px; cursor: pointer; display: flex; align-items: center;" onclick="window.location='/shifts?date={{datelist[4]}}'">&#9654;</div>
+    </div>
+    </div>
+
+
+    <div style="padding: 5%; padding-top: 0%;">
+    <div style="display: flex;justify-content: space-between; width: 100%; ">
+        <div>
+        <h1 style="border-bottom: 3px solid black; padding: 5px;">Morning Shift</h1>
+        {% for person in shiftlist[0] %}
+            <p style="padding: 10px">{{ person }} - {{ departmentlist[0][loop.index0] }}</p>
+        {% endfor %}
+    </div>
+    <div>
+        <h1 style="border-bottom: 3px solid black; padding: 5px;">Afternoon Shift</h1>
+        {% for person in shiftlist[1] %}
+            <p style="padding: 10px">{{ person }} - {{ departmentlist[1][loop.index0] }}</p>
+        {% endfor %}
+    </div>
+    <div>
+        <h1 style="border-bottom: 3px solid black; padding: 5px;">Midnight Shift</h1>
+        {% for person in shiftlist[2] %}
+            <p style="padding: 10px">{{ person }} - {{ departmentlist[2][loop.index0] }}</p>
+        {% endfor %}
+    </div>
+    </div>
+</div>
+    
+</body>
+</html>

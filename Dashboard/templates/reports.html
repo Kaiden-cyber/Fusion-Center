@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <title>Fusion Center Dashboard</title>
+</head>
+<body>
+    <!--Start Navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Fusion Center Reports</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/workflows">Workflows</a></li>
+            <li><a href="/shifts">Today's Shifts</a></li>
+            <li><a href="/reports">Daily Reports</a></li>
+        </ul>
+    </nav>
+
+    <div class="report-container">
+        <h2 style="font-size: 2rem;">Daily Reports</h2>
+        <ul class="report-list">
+            <li>
+                <span class="report-date">June 3, 2025</span>
+                <a href="{{ url_for('static', filename='06-03-2025.pdf') }}" download class="download-link">View Report</a>
+            </li>
+            <li>
+                <span class="report-date">June 2, 2025</span>
+                <a href="{{ url_for('static', filename='06-02-2025.pdf') }}" download class="download-link">View Report</a>
+            </li>
+            <li>
+                <span class="report-date">June 1, 2025</span>
+                <a href="{{ url_for('static', filename='06-01-2025.pdf') }}" download class="download-link">View Report</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
