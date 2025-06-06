@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
     <title>Fusion Center Dashboard</title>
     <meta http-equiv="refresh" content="10">  <!-- Auto-refresh every 10 sec -->
 </head>
 <body>
+    <!--Start Navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Fusion Center Dashboard</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/workflows">Workflows</a></li>
+            <li><a href="/shifts">Today's Shifts</a></li>
+            <li><a href="/reports">Daily Reports</a></li>
+        </ul>
+    </nav>
+    <!--End Navbar-->
+
     <div class="container">
         <div class="Profiles">
             <div style="margin: auto;margin-right: auto; padding: 10px; display: block; width: 50%;">
@@ -19,7 +34,7 @@
     </div>
     <iframe src="/profile?name={{random_profile.name}}"></iframe>
     <div style="width: 100%; margin: auto" class="social-media-feed">
-        <h2 style="background: none; padding: 15px;">Most Recent Posts</h2>
+        <h2 style="background: none; padding: 15px;">Most Recent Post</h2>
         <div class="post">
             <h3 class="username">{{socials[rand_index].username}}</h3>
             <p class="content">{{socials[rand_index].message}}</p>
