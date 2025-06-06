@@ -33,4 +33,4 @@
 </ol>
 <h2>When You Run the Program it Should Look Like This:</h2>
 
-![Dashboard Preview](https://raw.githubusercontent.com/Kaiden-cyber/Fusion-Center/1e1f1efc827d96520c39fddb6ce40bfc377bb7bb/Dashboard/Demo.png)
+![Dashboard Preview](https://github.com/Kaiden-cyber/Fusion-Center/blob/398cde5e091787031337151f12e0fd4045c9bdbb/Dashboard/Demo.png)
