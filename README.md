@@ -41,7 +41,7 @@ The Fusion Center must include key domestic and international partners for maxim
 ---
 
 ## 4. Operational & Organizational Considerations
-For the FUsion Center to function optimally, it needs strong governance and standardized protocols:
+For the Fusion Center to function optimally, it needs strong governance and standardized protocols:
 
 - **Hierarchical Chain of Command:** Director-level oversight, with sector chiefs for different intelligence domains.
 - **Automated Red Flag System:** Any critical security event triggers a multi-agency alert, reducing response delays.
