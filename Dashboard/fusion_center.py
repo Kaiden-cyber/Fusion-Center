@@ -1,14 +1,18 @@
-from flask import Flask, render_template, request, redirect, url_for
+from operator import indexOf
+from flask import Flask, render_template, request, redirect, url_for, session
 import json
 import os
 import random
 from datetime import datetime, timedelta
 from urllib.parse import unquote
+from werkzeug.security import check_password_hash, generate_password_hash
+import secrets
 
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = secrets.token_hex(32)
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data.json")
 SHIFTS_FILE = os.path.join(os.path.dirname(__file__), "shifts.json")
+ACCOUNTS_FILE = os.path.join(os.path.dirname(__file__), "accounts.json")
 
 def add_suffix(day):
     if 10 <= day <= 20:
@@ -39,7 +43,13 @@ def load_workers(weekday):
             departments[shift_conversion.get(i["shift_time_range"])].append(i["role"])
     
     return departments, working_employees
-
+def load_account(email):
+    with open(ACCOUNTS_FILE, "r") as file:
+        data = json.load(file)
+    for i in data["users"]:
+        if email in i["email"]:
+            return i
+    return ""
 def load_data():
     with open(DATA_FILE, "r") as file:
         data = json.load(file)
@@ -47,7 +57,6 @@ def load_data():
     data["tagged_individuals"].sort(key=lambda x: threat_order.get(x["threat_level"], 3))
     
     name_order = {person["name"]: i for i, person in enumerate(data["tagged_individuals"])}
-
     data["media_posts"].sort(key=lambda post: name_order.get(post["tagged_individual"], len(name_order)))
 
     return data
@@ -122,5 +131,47 @@ def shifts():
     days, dates = get_dates(today)
     weekday = today.strftime("%A")
     return render_template('shifts.html', datelist=dates, daylist=days, curr_date=datetime.today().strftime("%a %b %-d"), shiftlist=load_workers(weekday)[1], departmentlist=load_workers(weekday)[0])
+@app.route('/profile')
+def load_profile():
+    return render_template('profile.html')
+
+@app.before_request
+def require_login():
+    allowed_routes = ['login', 'static']
+    if request.endpoint not in allowed_routes and 'user_id' not in session:
+        if request.endpoint:
+            return redirect(url_for("login"))
+
+@app.route('/login', methods=["GET","POST"])
+def login():
+    if request.method == 'POST':
+        print(request.form)
+        email = request.form.get('email')
+        password = request.form.get('password')
+        #Login Logic below
+        account = load_account(email)
+        if account != "":
+            if (check_password_hash(account["password"],password)):
+                session['user_id'] = account["user_id"]
+                session['email'] = account["email"]
+                session['name'] = account["name"]
+                session["role"] = account["role"]
+                return redirect(url_for('dashboard'))
+            return render_template("login.html")
+        else:
+            return render_template("login.html")
+    if request.method == 'GET':
+        if 'user_id' in session:
+            return redirect(url_for('dashboard'))
+        else:
+            return render_template("login.html")
+@app.route('/account')
+def account():
+    return render_template("account.html", name=session['name'],email=session['email'],user_id=session['user_id'], role=session["role"])
+
+@app.route('/sign-out')
+def sign_out():
+    session.clear()
+    return redirect(url_for("login"))
 if __name__ == '__main__':
     app.run(debug=True)
