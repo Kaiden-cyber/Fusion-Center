@@ -1,0 +1,145 @@
+{
+    "users": [
+      {
+        "user_id": 1,
+        "name": "Sofia Moreno",
+        "email": "sofia.moreno@example.com",
+        "role": "Intelligence Analyst",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 2,
+        "name": "Carlos Ramirez",
+        "role": "Cybersecurity Specialist",
+        "email": "carlos.ramirez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 3,
+        "name": "Maria Gonzalez",
+        "role": "Data Scientist",
+        "email": "maria.gonzalez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 4,
+        "name": "Juan Perez",
+        "role": "Operations Coordinator",
+        "email": "juan.perez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 5,
+        "name": "Ana Martinez",
+        "role": "Threat Analyst",
+        "email": "ana.martinez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 6,
+        "name": "Luis Hernandez",
+        "role": "Database Administrator",
+        "email": "luis.hernandez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 7,
+        "name": "Isabel Lopez",
+        "role": "Communications Officer",
+        "email": "isabel.lopez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 8,
+        "name": "Miguel Torres",
+        "role": "Field Liaison",
+        "email": "miguel.torres@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 9,
+        "name": "Laura Diaz",
+        "role": "Policy Advisor",
+        "email": "laura.diaz@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 10,
+        "name": "Victor Cruz",
+        "role": "Technical Support",
+        "email": "victor.cruz@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 11,
+        "name": "Emily Carter",
+        "role": "Network Engineer",
+        "email": "emily.carter@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 12,
+        "name": "James Brown",
+        "role": "System Administrator",
+        "email": "james.brown@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 13,
+        "name": "Sarah Johnson",
+        "role": "Incident Response Specialist",
+        "email": "sarah.johnson@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 14,
+        "name": "Robert Wilson",
+        "role": "Forensic Analyst",
+        "email": "robert.wilson@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 15,
+        "name": "Olivia Martinez",
+        "role": "Security Operations Specialist",
+        "email": "olivia.martinez@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 16,
+        "name": "Daniel Garcia",
+        "role": "Threat Intelligence Officer",
+        "email": "daniel.garcia@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 17,
+        "name": "Nathan Scott",
+        "role": "Software Engineer",
+        "email": "nathan.scott@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 18,
+        "name": "Jessica Taylor",
+        "role": "Cyber Risk Analyst",
+        "email": "jessica.taylor@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 19,
+        "name": "Ethan White",
+        "role": "Digital Forensics Specialist",
+        "email": "ethan.white@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      },
+      {
+        "user_id": 20,
+        "name": "Sophia Green",
+        "role": "Operations Supervisor",
+        "email": "sophia.green@example.com",
+        "password": "pbkdf2:sha256:260000$Wjsth3PAwkm43Vb5$faaca618d069ed03c7bb25e71002829ab857f8795a3fe38f1e7fd3d1a93d5261"
+      }
+    ]
+  }
+  
