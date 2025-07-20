@@ -58,4 +58,4 @@ I have created a demo program that is meant to be an outline of the features and
 ![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Workflows.png)
 ![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Shifts.png)
 ![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Reports.png)
-![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/48563aa99d2227c991b2faabd7395deb0581755e/Dashboard/images/Account.png)
+![Demo Image](https://github.com/Kaiden-cyber/Fusion-Center/blob/5b42a4baedffd2dcf8a1a5edf41a7fe8864b1cbe/Dashboard/images/Account.png)
