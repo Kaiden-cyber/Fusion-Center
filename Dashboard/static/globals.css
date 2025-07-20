@@ -103,3 +103,11 @@ td {
     margin-top: 10px;
     cursor: pointer;
 }
+input::placeholder {
+    color: #ffffff;
+    opacity: 0.8; /* optional, for better subtlety */
+  }
+.user-icon:hover{
+    background-color: black;
+    color: white;
+}
