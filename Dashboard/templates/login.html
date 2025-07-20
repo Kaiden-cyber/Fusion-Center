@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Center Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <form method="POST" action="{{ url_for('login') }}">
+        <h1>Sign In</h1>
+        <div class="profile" style="padding: 15px;">
+            <input style="background-color: #007bff; width: 300px; height: 25px; margin: auto; font-size: 25px; color: white" type="email" name="email" placeholder="Email" required>
+            <br>
+            <input style="background-color: #007bff; width: 300px; height: 25px; margin: auto; font-size: 25px; color: white" type="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" style="border-style: none; width: 95%;">Login</button>
+    </form>
+    </div>
+    
+</body>
+</html>
